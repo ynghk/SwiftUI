@@ -23,12 +23,12 @@ struct Item: Identifiable {
 let items: [Item] = [
     .init(
         image: "waveform.path.ecg.magnifyingglass",
-        title: "Analzye the crying of your baby",
+        title: "아기의 울음소리를 분석하세요",
         scale: 1
     ),
     .init(
         image: "calendar.badge.plus",
-        title: "Manage your babysitting schedule effectively",
+        title: "육아일지 기록을 효율적으로 관리하세요",
         scale: 0.6,
         anchor: .topLeading,
         offset: -70,
@@ -36,7 +36,7 @@ let items: [Item] = [
     ),
     .init(
         image: "clock.fill",
-        title: "Keep track of your baby's activity time",
+        title: "아기의 활동 시간을 정확히 추적하세요",
         scale: 0.5,
         anchor: .bottomLeading,
         offset: -60,
@@ -44,7 +44,7 @@ let items: [Item] = [
     ),
     .init(
         image: "person.text.rectangle.fill",
-        title: "Manage your baby's profile cards",
+        title: "아기의 프로필 카드를 간편하게 관리하세요",
         scale: 0.4,
         anchor: .bottomLeading,
         offset: -50,
@@ -52,7 +52,7 @@ let items: [Item] = [
     ),
     .init(
         image: "microphone.fill",
-        title: "Touchfree voice control",
+        title: "두 손은 자유롭게, 음성인식 기능을 활용해보세요",
         scale: 0.35,
         anchor: .bottomLeading,
         offset: -50,

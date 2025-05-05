@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var selectedItem: Item = items.first!
     @State private var introItems: [Item] = items
     @State private var activeIndex: Int = 0
+    
     var body: some View {
         VStack(spacing: 0) {
             // Back Button
@@ -35,12 +36,13 @@ struct ContentView: View {
             .frame(height: 250)
             .frame(maxHeight: .infinity)
         }
+        
         VStack(spacing: 6) {
             // Progress Indicator View
             HStack(spacing: 4) {
                 ForEach(introItems) { item in
                     Capsule()
-                        .fill(selectedItem.id == item.id ? Color.primary : .gray)
+                        .fill(selectedItem.id == item.id ? Color.indigo : .gray)
                         .frame(width: selectedItem.id == item.id ? 25:4, height: 4)
                 }
             }
@@ -51,9 +53,10 @@ struct ContentView: View {
                 .contentTransition(.numericText())
             
             // Description
-            Text("우리는 죠습니다")
-                .font(.caption2)
+            Text("My i")
+                .font(.caption)
                 .foregroundStyle(.gray)
+            
             
             // Next/continue Button
             Button {
